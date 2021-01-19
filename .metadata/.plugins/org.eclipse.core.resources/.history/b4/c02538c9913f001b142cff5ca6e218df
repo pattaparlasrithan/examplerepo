@@ -1,0 +1,5 @@
+package com.example.messaging.activemqexample.resource;
+
+public class ProducerResource {
+
+}

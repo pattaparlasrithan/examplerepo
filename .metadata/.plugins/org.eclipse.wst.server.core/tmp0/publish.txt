@@ -1,0 +1,10 @@
+#Tomcat publish data
+#Tue Nov 17 21:10:25 IST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Raju\\.m2\\repository\\org\\springframework\\spring-web\\5.2.2.RELEASE\\spring-web-5.2.2.RELEASE.jar=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Firstexample\\WEB-INF\\lib\\spring-web-5.2.2.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:F\:\\Spring\ Boot\ v3.9\\Bankapplication\\WebContent\\WEB-INF\\lib\\jasper.jar=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Bankapplication\\WEB-INF\\lib\\jasper.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Raju\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\9.0.38\\tomcat-embed-jasper-9.0.38.jar=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\SpringMVCExample-3\\WEB-INF\\lib\\tomcat-embed-jasper-9.0.38.jar
+org.eclipse.jst.jee.server\:Firstexample=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Firstexample
+org.eclipse.jst.jee.server\:SpringMVCExample-3=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\SpringMVCExample-3
+org.eclipse.jst.jee.server\:Bankapplication=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Bankapplication
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Raju\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-el\\9.0.38\\tomcat-embed-el-9.0.38.jar=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\SpringMVCExample-3\\WEB-INF\\lib\\tomcat-embed-el-9.0.38.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Raju\\.m2\\repository\\org\\springframework\\spring-web\\5.2.9.RELEASE\\spring-web-5.2.9.RELEASE.jar=E\:\\Softwares\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\SpringMVCExample-3\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar

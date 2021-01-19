@@ -1,0 +1,10 @@
+package com.example.demo.rest;
+
+
+
+
+@RestController
+public class ECommerceRestController {
+	
+
+}

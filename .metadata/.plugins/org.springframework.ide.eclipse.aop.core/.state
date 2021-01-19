@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Bus-Booking"/>
+<aop-project name="Insurence-Messaging"/>
+<aop-project name="ReadCSVFileProject"/>
+<aop-project name="Bus-Ticket"/>
+<aop-project name="Swipe-Management"/>
+<aop-project name="SpringMVCExample-3"/>
+<aop-project name="SpringMVCExample-1"/>
+<aop-project name="Firstdemo"/>
+<aop-project name="Hibernateexample"/>
+<aop-project name="activemq-example"/>
+<aop-project name="demo"/>
+<aop-project name="Firstexample"/>
+<aop-project name="E-Commerce"/>
+<aop-project name="TicketBookingMessage"/>
+<aop-project name="LIC-Insurepolicies"/>
+<aop-project name="2_Hibernateexample"/>
+<aop-project name="Swipe-Management_Old"/>
+<aop-project name="Springbootwithswagger"/>
+<aop-project name="SpringMVCexample"/>
+</aop-reference-model>

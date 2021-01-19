@@ -1,0 +1,21 @@
+package com.example.demo.service;
+
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.demo.dto.AddCartdto;
+import com.example.demo.dto.LoginPrDetailsdto;
+import com.example.demo.exceptions.CustomException;
+
+
+
+
+public interface InsurenceService {
+	
+	
+	public String insurenceTicket(RequestDto ticketBookingRequest);
+
+}

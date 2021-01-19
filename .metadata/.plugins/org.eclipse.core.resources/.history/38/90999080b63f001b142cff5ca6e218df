@@ -1,0 +1,22 @@
+package com.example.demo.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+@Getter @Setter
+@Entity
+@Table(name = "T_ticket_reservation")
+public class DatabaseConnection {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long ticketId;
+	private long userId;
+	private int numberOfSeats;
+	private BigDecimal totalCost;
+	private Date journeyDate;
+	private String sourceStation;
+	private String destinationStation;
+	private String bookingStatus="Pending";
+
+}
+

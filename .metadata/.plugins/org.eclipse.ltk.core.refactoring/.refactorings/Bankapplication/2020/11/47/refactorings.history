@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;LIC-Insurepolicies/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Bankapplication&apos;&#x0D;&#x0A;- Destination element: &apos;LIC-Insurepolicies/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Bankapplication/src/com.bank.serviceimpl&#x0D;&#x0A;     Bankapplication/src/com.bank.service" description="Copy packages" destination="=LIC-Insurepolicies/src\/main\/java" element1="/src&lt;com.bank.serviceimpl" element2="/src&lt;com.bank.service" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1605716313505" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+package com.example.demo.dto;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+import lombok.Getter;
+import lombok.Setter;
+@Getter@Setter
+public class InsurenceRequestDto implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+//	private int insurenceId;
+    private int ticketId;
+    private int userId;
+    private BigDecimal totalCost;
+    private BigDecimal insurenceAmount;
+    
+	
+	
+}

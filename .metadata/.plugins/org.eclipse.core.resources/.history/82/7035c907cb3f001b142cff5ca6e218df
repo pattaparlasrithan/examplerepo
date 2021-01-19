@@ -1,0 +1,46 @@
+package com.example.demo.dto;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+import lombok.Getter;
+import lombok.Setter;
+@Getter@Setter
+public class InsurenceRequestDto implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+//	private int insurenceId;
+    private int ticketId;
+    private int userId;
+    private BigDecimal totalCost;
+    private BigDecimal insurenceAmount;
+	public void setTicketId(int ticketId) {
+		this.ticketId = ticketId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public void setTotalCost(BigDecimal totalCost) {
+		this.totalCost = totalCost;
+	}
+	public void setInsurenceAmount(BigDecimal insurenceAmount) {
+		this.insurenceAmount = insurenceAmount;
+	}
+	public int getTicketId() {
+		return ticketId;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public BigDecimal getTotalCost() {
+		return totalCost;
+	}
+	public BigDecimal getInsurenceAmount() {
+		return insurenceAmount;
+	}
+    
+	
+	
+}

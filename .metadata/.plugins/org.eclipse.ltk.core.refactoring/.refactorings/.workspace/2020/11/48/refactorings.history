@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringMVCExample-4&apos; to &apos;Swipe-Management&apos;" description="Rename resource &apos;SpringMVCExample-4&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SpringMVCExample-4" name="Swipe-Management" stamp="1606383243078" updateReferences="true"/>
+</session>

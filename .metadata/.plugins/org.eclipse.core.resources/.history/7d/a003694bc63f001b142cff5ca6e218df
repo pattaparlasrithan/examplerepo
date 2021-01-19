@@ -1,0 +1,49 @@
+package com.example.demo.serviceimpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.jms.Queue;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+
+import com.example.demo.dao.DatabaseConnection;
+import com.example.demo.dao.InsurenceTicket;
+import com.example.demo.dto.InsurenceRequestDto;
+import com.example.demo.exceptions.CustomException;
+import com.example.demo.repo.InsurenceTicketRepository;
+import com.example.demo.service.InsurenceService;
+
+
+
+public class InsurenceServiceimpl implements InsurenceService{
+
+	@Autowired
+	Queue queue;	
+	@Autowired
+	JmsTemplate template;	
+	@Autowired
+	InsurenceTicketRepository insurenceTicketRepo;
+
+	@Override
+	public String insurenceTicket(InsurenceRequestDto insurencerequest) {
+		String response;
+		InsurenceTicket insurenceTicket = new InsurenceTicket();
+		Long userId = insurencerequest.getTicketId();
+		if(!insurenceTicketRepo.existsById(userId))
+			throw new CustomerNotFundException("Invalid User Id");
+		BeanUtils.copyProperties(ticketBookingRequest, ticketReservation);
+		ticketReservationRepo.save(ticketReservation);
+		template.convertAndSend(queue,ticketBookingRequest);
+		response="Ticket processing";
+		return response;
+	}
+	
+}

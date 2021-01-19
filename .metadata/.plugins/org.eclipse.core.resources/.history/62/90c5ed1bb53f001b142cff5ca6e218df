@@ -1,0 +1,44 @@
+package com.example.demo.serviceimpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import com.example.demo.dao.DatabaseConnection;
+
+import com.example.demo.exceptions.CustomException;
+
+import com.example.demo.service.InsurenceService;
+
+
+
+public class InsurenceServiceimpl implements InsurenceService{
+
+	@Autowired
+	Queue queue;	
+	@Autowired
+	JmsTemplate template;
+	@Autowired
+	UserDetailsRepository userDetailsRepo;
+	@Autowired
+	TicketReservationRepository ticketReservationRepo;
+
+	@Override
+	public String bookTicket(TicketBookingRequestDto ticketBookingRequest) {
+		String response;
+		TicketReservation ticketReservation = new TicketReservation();
+		Long userId = ticketBookingRequest.getUserId();
+		if(!userDetailsRepo.existsById(userId))
+			throw new CustomerNotFundException("Invalid User Id");
+		BeanUtils.copyProperties(ticketBookingRequest, ticketReservation);
+		ticketReservationRepo.save(ticketReservation);
+		template.convertAndSend(queue,ticketBookingRequest);
+		response="Ticket processing";
+		return response;
+	}
+	
+}
